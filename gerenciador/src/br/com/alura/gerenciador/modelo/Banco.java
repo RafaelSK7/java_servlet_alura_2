@@ -29,7 +29,6 @@ public class Banco {
 		
 		listaUsuarios.add(u1);
 		listaUsuarios.add(u2);
-
 	}
 
 	public void adiciona(Empresa empresa) {
@@ -64,7 +63,7 @@ public class Banco {
 	}
 
 	public Usuario existeUsuario(String login, String senha) {
-		for (Usuario usuario : listaUsuarios) {
+		for(Usuario usuario : listaUsuarios) {
 			if(usuario.ehIgual(login, senha)) {
 				return usuario;
 			}
